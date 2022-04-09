@@ -1,0 +1,116 @@
+:root {
+    --fs-700: 32px;
+    --fs-400: 16px;
+    --fs-300: 14px;
+    --fs-200: 13px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(20, 20, 20), rgb(30, 30, 30));
+}
+
+header {
+    margin: 2em 0;
+}
+
+header #title {
+    color: white;
+    text-align: center;
+    font-size: var(--fs-700);
+    margin-bottom: 8px;
+}
+
+header #description {
+    text-align: center;
+    color: white;
+    font-size: var(--fs-400);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 40vw;
+    height: auto;
+    margin: 2em auto;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.card .card-img {
+    align-self: center;
+    width: 10vw;
+    margin: 1em 0;
+}
+
+label {
+    font-size: var(--fs-300);
+    margin: 12px 0;
+}
+
+input, select, textarea {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    margin-bottom: 1em;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 0;
+    border: 1.75px solid gray;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+#survey-form #p-label {
+    font-size: var(--fs-300);
+}
+
+#survey-form .group {
+    display: flex;
+    flex-direction: row;
+}
+
+#survey-form .group-label {
+    margin: 0;
+    margin-left: 1em;
+    font-size: var(--fs-200);
+}
+
+#survey-form #submit {
+    margin-top: 2em;
+    align-self: flex-end;
+    transition: background-color 200ms ease;
+}
+
+#survey-form #submit:hover {
+    color: white;
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    :root {
+        --fs-700: 24px;
+        --fs-400: 14px;
+        --fs-300: 13px;
+        --fs-200: 12px;
+    }
+
+    .card {
+        width: 80vw;
+    }
+
+    .card .card-img {
+        width: 25vw;
+    }
+}

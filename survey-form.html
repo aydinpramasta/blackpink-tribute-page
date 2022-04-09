@@ -4,10 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/survey-form.css">
     <title>Survey Form</title>
 </head>
 <body>
-    
+    <header>
+        <h1 id="title">Experience Survey Form</h1>
+        <p id="description">Tell us your experiences about our services.</p>
+    </header>
+
+    <div class="card">
+        <img class="card-img" src="assets/images/survey-form-logo.png" alt="Survey Form Logo">
+
+        <form id="survey-form">
+            <label id="name-label" for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+            <label id="number-label" for="number">Customer ID</label>
+            <input type="number" name="number" id="number" min="69" max="420" placeholder="Enter your customer ID" required>
+
+            <label id="service-label" for="dropdown">Most Favorite Service</label>
+            <select name="service" id="dropdown" required>
+                <option disabled selected>Select your favorite service</option>
+                <option value="1">PDF to Word</option>
+                <option value="2">JPG to PNG</option>
+                <option value="3">Background Remover</option>
+            </select>
+
+            <p id="p-label">How satisfied are you?</p>
+
+            <div class="group">
+                <input type="radio" name="satisfy-level" id="awesome" value="Awesome">
+                <label class="group-label" for="awesome">Awesome</label>
+            </div>
+
+            <div class="group">
+                <input type="radio" name="satisfy-level" id="okay" value="Okay">
+                <label class="group-label" for="okay">Okay</label>
+            </div>
+
+            <div class="group">
+                <input type="radio" name="satisfy-level" id="meh" value="Meh">
+                <label class="group-label" for="meh">Meh</label>
+            </div>
+
+            <div class="group">
+                <input type="radio" name="satisfy-level" id="bad" value="Bad">
+                <label class="group-label" for="bad">Bad</label>
+            </div>
+
+            <p id="p-label">What service you would like to see in the future?</p>
+
+            <div class="group">
+                <input type="checkbox" name="ideas" id="json-beautify" value="json-beautify">
+                <label class="group-label" for="json-beautify">JSON Beautify</label>
+            </div>
+
+            <div class="group">
+                <input type="checkbox" name="ideas" id="css-minify" value="css-minify">
+                <label class="group-label" for="css-minify">CSS Minify</label>
+            </div>
+
+            <div class="group">
+                <input type="checkbox" name="ideas" id="javascript-minify" value="javascript-minify
+                javascript-minify">
+                <label class="group-label" for="javascript-minify">JavaScript Minify</label>
+            </div>
+
+            <label id="suggestions" for="textarea">Do you have any suggestions?</label>
+            <textarea name="suggestions" id="textarea" placeholder="Enter your suggestions" rows="5"></textarea>
+
+            <input id="submit" type="submit" name="submit" value="Submit">
+        </form>
+    </div>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
