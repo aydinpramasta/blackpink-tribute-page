@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/technical-documentation.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>PHP Documentation</header>
+
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#What_can_PHP_do?">What can PHP do?</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Why_should_we_use_PHP?">Why should we use PHP?</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+
+            <article>
+                <p>The term PHP is an acronym for PHP: Hypertext Preprocessor. PHP is a server-side scripting language designed specifically for web development. It is open-source which means it is free to download and use. It is very simple to learn and use. The files have the extension “.php”.</p>
+
+                <p>Rasmus Lerdorf inspired the first version of PHP and participating in the later versions. It is an interpreted language and it does not require a compiler.</p>
+
+                <p>What distinguishes PHP from something like client-side JavaScript is that the code is executed on the server, generating HTML which is then sent to the client. The client would receive the results of running that script, but would not know what the underlying code was. You can even configure your web server to process all your HTML files with PHP, and then there's really no way that users can tell what you have up your sleeve.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="What_can_PHP_do?">
+            <header>What can PHP do?</header>
+
+            <article>
+                <p>There are three main areas where PHP scripts are used.</p>
+
+                <ul>
+                    <li>
+                        <p>Server-side scripting. This is the most traditional and main target field for PHP. You need three things to make this work: the PHP parser (CGI or server module), a web server and a web browser. You need to run the web server, with a connected PHP installation. You can access the PHP program output with a web browser, viewing the PHP page through the server. All these can run on your home machine if you are just experimenting with PHP programming.</p>
+                    </li>
+                    <li>
+                        <p>Command line scripting. You can make a PHP script to run it without any server or browser. You only need the PHP parser to use it this way. This type of usage is ideal for scripts regularly executed using cron (on *nix or Linux) or Task Scheduler (on Windows). These scripts can also be used for simple text processing tasks.</p>
+                    </li>
+                    <li>
+                        <p>Writing desktop applications. PHP is probably not the very best language to create a desktop application with a graphical user interface, but if you know PHP very well, and would like to use some advanced PHP features in your client-side applications you can also use PHP-GTK to write such programs. You also have the ability to write cross-platform applications this way. PHP-GTK is an extension to PHP, not available in the main distribution.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        
+        <section class="main-section" id="Why_should_we_use_PHP?">
+            <header>Why should we use PHP?</header>
+
+            <article>
+                <p>PHP can actually do anything related to server-side scripting or more popularly known as the backend of a website. For example, PHP can receive data from forms, generate dynamic page content, can work with databases, create sessions, send and receive cookies, send emails etc. There are also many hash functions available in PHP to encrypt user's data that makes PHP secure and reliable to be used as a server-side scripting language. So these are some of the abilities of PHP that makes it suitable to be used as server-side scripting language.</p>
+
+                <p>Even if you are not convinced by the above abilities of PHP, there are some more features of PHP. PHP can run on all major operating systems like Windows, Linux, Unix, Mac OS X etc. Almost all of the major servers available today like Apache supports PHP. PHP allows using wide range of databases. And the most important factor is that it is free to use and download and anyone can download PHP from its official source : <a href="https://www.php.net" target="_blank">www.php.net</a>.</p>
+            </article>
+        </section>
+
+        <section class="main-section">
+            <header></header>
+        </section>
+        
+        <section class="main-section">
+            <header></header>
+        </section>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

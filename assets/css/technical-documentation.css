@@ -1,0 +1,84 @@
+:root {
+    --fs-600: 24px;
+    --fs-400: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    min-height: 100vh;
+    background-color: #303030;
+}
+
+#navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25vw;
+    height: 100vh;
+    overflow: scroll;
+}
+
+#main-doc {
+    margin-left: 25vw;
+    color: white;
+    padding: 2rem;
+}
+
+#navbar header {
+    text-align: center;
+    margin: 1.5rem auto;
+    font-weight: bold;
+    font-size: var(--fs-600);
+}
+
+#navbar ul {
+    padding: 0 1rem;
+    margin: 0;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    margin: 2rem auto;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid black;
+}
+
+.main-section header {
+    font-size: var(--fs-600);
+    font-weight: bold;
+}
+
+.main-section article {
+    margin: 1.5rem 0;
+}
+
+.main-section p {
+    font-size: var(--fs-400);
+    text-align: justify;
+    padding-left: 2rem;
+    line-height: 1.75;
+}
+
+.main-section a {
+    color: white;
+    transition: font-weight 50ms ease;
+}
+
+.main-section a:hover {
+    font-weight: bold;
+}
