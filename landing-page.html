@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="assets/css/landing-page.css">
+    
+    <title>Landing Page</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="logo">
+                <img src="assets/images/landing-page-logo.png" alt="Company Logo" id="header-img">
+            </div>
+
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#intro" class="nav-link">Intro</a></li>
+                    <li><a href="#plans" class="nav-link">Plans</a></li>
+                    <li><a href="#subscribe" class="nav-link">Get Subscribed!</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div id="intro">
+        <div class="intro-desc">
+            <h1>All The News You Wanted!</h1>
+
+            <p>We offer you the most fresh and tasty news from around the world. The video on the right side is one of (if not) the most popular news in the world. And we are the news media that cover it <strong>FIRST</strong>!</p>
+
+            <a href="#plans">
+                <button type="button">Explore our plans</button>
+            </a>
+        </div>
+
+        <div class="intro-video">
+            <iframe id="video" height="300" src="https://www.youtube.com/embed/Ug895gIBELM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="plans">
+        <h2>Our Plans</h2>
+
+        <div class="card">
+            <h3>Premium</h3>
+            <p class="price">Rp. 50.000,-</p>
+            <p class="features">Newest News</p> 
+            <p class="features">No ads</p>
+            <button type="button"><strong>SELECT</strong></button>
+        </div>
+
+        <div class="card">
+            <h3>VIP</h3>    
+            <p class="price">Rp. 150.000,-</p>  
+            <p class="features">Newest News</p> 
+            <p class="features">No ads</p>
+            <p class="features">Cool souvenier</p>
+            <button type="button"><strong>SELECT</strong></button>
+        </div>
+
+        <div class="card">
+            <h3>MVP</h3>    
+            <p class="price">Rp. 500.000,-</p>  
+            <p class="features">Newest News</p> 
+            <p class="features">No ads</p>
+            <p class="features">Cool merch</p>
+            <button type="button"><strong>SELECT</strong></button>
+        </div>
+    </div>
+
+    <div id="subscribe">
+        <h2>Never miss a single news!</h2>
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" name="email" id="email" placeholder="Enter your email address">
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+
+    <footer>
+        <div>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div>Copyright &copy; Newspaper</div>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

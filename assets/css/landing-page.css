@@ -1,0 +1,279 @@
+:root {
+    --fs-400: 16px;
+    --fs-600: 24px;
+    --fs-700: 32px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+#wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    background-color: white;
+    z-index: 10;
+}
+
+#header .logo {
+    width: 75px;
+}
+
+#header .logo #header-img {
+    width: 100%;
+}
+
+#header #nav-bar {
+    align-self: center;
+}
+
+#header #nav-bar ul {
+    display: flex;
+    padding: 0;
+}
+
+#header #nav-bar ul li {
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+#header #nav-bar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: var(--fs-400);
+    font-weight: 500;
+}
+
+#header #nav-bar ul li a:hover {
+    border-bottom: 1px solid black;
+}
+
+#intro {
+    min-height: 100vh;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro > * {
+    margin-inline: 1rem;
+}
+
+#intro .intro-desc {
+    flex-basis: 50%;
+}
+
+#intro .intro-desc p {
+    line-height: 2;
+}
+
+button {
+    background: none;
+    border: 1px solid black;
+    margin: 1rem 0;
+    padding: 12px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 200ms ease,
+    color 200ms ease;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+#intro .intro-video {
+    flex-basis: 50%;
+}
+
+#intro .intro-video #video {
+    width: 100%;
+    border-radius: 12px;
+}
+
+#plans {
+    min-height: 100vh;
+    padding: 4rem 2rem 2rem 2rem;
+    border-top: 2.5px dashed black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#plans h2 {
+    text-align: center;
+    flex-basis: 100%;
+    font-size: var(--fs-700);
+}
+
+#plans .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 2rem;
+    border: 1px solid black;
+    transition: transform 200ms ease,
+    box-shadow 200ms ease;
+}
+
+#plans .card:hover {
+    transform: scale(1.015);
+    box-shadow: 0 8px 5px 5px rgba(0,0,0,0.3);
+}
+
+#plans .card h3 {
+    font-size: var(--fs-600);
+}
+
+#plans .card .price {
+    font-size: var(--fs-700);
+    font-weight: bold;
+}
+
+#plans .card button {
+    margin-top: auto;
+}
+
+#subscribe {
+    min-height: 75vh;
+    padding: 4rem 2rem 2rem 2rem;
+    border-top: 2.5px dashed black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#subscribe h2 {
+    font-size: var(--fs-700);
+}
+
+#subscribe form {
+    margin: 2rem 0;
+}
+
+#subscribe form #email {
+    width: 25vw;
+    padding: 12px;
+    margin-inline: 2rem;
+    border: 1px solid black;
+    font-family: 'Inter', sans-serif;
+    transition: outline 50ms ease;
+}
+
+#subscribe form #email:focus {
+    outline: 2px solid;
+}
+
+#subscribe form #submit {
+    background: none;
+    border: 1px solid black;
+    padding: 12px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 200ms ease,
+    color 200ms ease;
+}
+
+#subscribe form #submit:hover {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    margin-inline: 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    :root {
+        --fs-400: 14px;
+        --fs-600: 20px;
+        --fs-700: 26px;
+    }
+
+    #header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    #header .logo {
+        width: 60px;
+    }
+
+    #header #nav-bar ul li {
+        margin-inline: 0.5rem;
+    }
+
+    #plans {
+        padding-top: 7rem;
+    }
+
+    #subscribe form #email {
+        width: 50vw;
+    }
+
+    #subscribe form #submit {
+        margin: 1rem 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > * {
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 800px) {
+    #intro {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 7rem;
+    }
+
+    #intro .intro-desc {
+        text-align: center;
+        flex-basis: 100%;
+    }
+
+    #intro .intro-video {
+        flex-basis: 100%;
+        width: 100%;
+        margin: 2rem 0;
+    }
+}
