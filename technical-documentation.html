@@ -7,6 +7,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/technical-documentation.css">
     <title>Technical Documentation Page</title>
 </head>
@@ -19,10 +21,49 @@
                 <a class="nav-link" href="#Introduction">Introduction</a>
             </li>
             <li>
-                <a class="nav-link" href="#What_can_PHP_do?">What can PHP do?</a>
+                <a class="nav-link" href="#What_can_PHP_do">What can PHP do</a>
             </li>
             <li>
-                <a class="nav-link" href="#Why_should_we_use_PHP?">Why should we use PHP?</a>
+                <a class="nav-link" href="#Why_should_we_use_PHP">Why should we use PHP</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Basic_syntax">Basic syntax</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Constants">Constants</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Comments">Comments</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Variables">Variables</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Data_types">Data types</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#if_statement">if statement</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#if_else_statement">if else statement</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#if_elseif_else_statement">if elseif else statement</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#switch_statement">switch statement</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#for_loop">for loop</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#while_loop">while loop</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#do_while_loop">do while loop</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#foreach_loop">foreach loop</a>
             </li>
         </ul>
     </nav>
@@ -40,8 +81,8 @@
             </article>
         </section>
 
-        <section class="main-section" id="What_can_PHP_do?">
-            <header>What can PHP do?</header>
+        <section class="main-section" id="What_can_PHP_do">
+            <header>What can PHP do</header>
 
             <article>
                 <p>There are three main areas where PHP scripts are used.</p>
@@ -60,8 +101,8 @@
             </article>
         </section>
         
-        <section class="main-section" id="Why_should_we_use_PHP?">
-            <header>Why should we use PHP?</header>
+        <section class="main-section" id="Why_should_we_use_PHP">
+            <header>Why should we use PHP</header>
 
             <article>
                 <p>PHP can actually do anything related to server-side scripting or more popularly known as the backend of a website. For example, PHP can receive data from forms, generate dynamic page content, can work with databases, create sessions, send and receive cookies, send emails etc. There are also many hash functions available in PHP to encrypt user's data that makes PHP secure and reliable to be used as a server-side scripting language. So these are some of the abilities of PHP that makes it suitable to be used as server-side scripting language.</p>
@@ -70,12 +111,430 @@
             </article>
         </section>
 
-        <section class="main-section">
-            <header></header>
+        <section class="main-section" id="Basic_syntax">
+            <header>Basic syntax</header>
+
+            <p>The structure which defines PHP computer language is called PHP syntax.</p>
+
+            <p>The PHP script is executed on the server and the HTML result is sent to the browser. It can normally have HTML and PHP tags. PHP or Hypertext Preprocessor is a widely used open-source general-purpose scripting language and can be embedded with HTML. PHP files are saved with the “.php” extension. PHP scripts can be written anywhere in the document within PHP tags along with normal HTML.</p>
+
+            <p>Writing the PHP code inside "<i>&lt;?php ... ?&gt;</i>"  is called <strong>Escaping to PHP</strong>.</p>
+
+            <p>The mechanism of separating a normal HTML from PHP code is called the mechanism of Escaping To PHP. There are various ways in which this can be done. Few methods are already set by default but in order to use few others like Short-open or ASP-style tags, we need to change the configuration of the php.ini file. These tags are also used for embedding PHP within HTML. There are 4 such tags available for this purpose.</p>
+
+            <p>Let's look at the hello world program in PHP.</p>
+
+            <code
+                >&lt;?php
+                    echo "Hello World";
+                ?&gt;</code>
+
+            <p>The above program will be outputting <strong>"Hello World"</strong> string.</p>
         </section>
         
-        <section class="main-section">
-            <header></header>
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+
+            <p>Constants can be defined using the define() function.</p>
+
+            <p>Here is an example.</p>
+
+            <code
+            >&lt;?php
+                define('APP_VERSION', 1.1.1);
+            ?&gt;</code>
+
+            <p>The define() function accepts 2 parameter. The first one is the constant name, and the second one is the value of the constant.</p>
+        </section>
+
+        <section class="main-section" id="Comments">
+            <header>Comments</header>
+
+            <p>Comments help in reminding the developer about the code if it's re-visited after a period of time.</p>
+
+            <p>A comment is something that is ignored and not read or executed by the PHP engine or the language as part of a program and is written to make the code more readable and understandable. These are used to help other users and developers to describe the code and what it is trying to do. It can also be used in documenting a set of codes or parts of a program. You must have noticed this in the above sample programs.</p>
+
+            <p>PHP supports two types of comment:</p>
+            
+            <ul>
+                <li>
+                    <p><strong>Single Line Comment</strong>: As the name suggests these are single line or short relevant explanations that one can add to their code. To add this, we need to begin the line with (//) or (#).</p>
+
+                    <code
+                    >&lt;?php
+                        // This is a single line comment
+                        // Cannot be extended to more lines
+
+                        # This is also a single line comment
+                    ?&gt;</code>
+                </li>
+                <li>
+                    <p>Multi-line or Multiple line Comment: These are used to accommodate multiple lines with a single tag and can be extended to many lines as required by the user. To add this, we need to begin and end the line with (/*…*/).</p>
+
+                    <code
+                    >&lt;?php
+                        /* This is a multi line comment.
+                            We can add multiple line in this type of comment. */
+                    ?&gt;</code>
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+
+            <p>Variables in a program are used to store some values or data that can be used later in a program. The variables are also like containers that store character values, numeric values, memory addresses, and strings. PHP has its own way of declaring and storing variables.</p>
+
+            <p>There are few rules, that needs to be followed and facts that need to be kept in mind while dealing with variables in PHP:</p>
+
+            <ul>
+                <li>
+                    <p>Any variables declared in PHP must begin with a dollar sign ($), followed by the variable name.</p>
+                </li>
+                <li>
+                    <p>A variable can have long descriptive names (like $factorial, $even_nos) or short names (like $n or $f or $x)</p>
+                </li>
+                <li>
+                    <p>A variable name can only contain alphanumeric characters and underscores (i.e., 'a-z', 'A-Z', '0-9', and '_') in their name. Even it cannot start with a number.</p>
+                </li>
+                <li>
+                    <p>A constant is used as a variable for a simple value that cannot be changed. It is also case-sensitive.</p>
+                </li>
+                <li>
+                    <p>Assignment of variables is done with the assignment operator, "equal to (=)". The variable names are on the left of equal and the expression or values are to the right of the assignment operator '='.</p>
+                </li>
+                <li>
+                    <p>One must keep in mind that variable names in PHP names must start with a letter or underscore and no numbers.</p>
+                </li>
+                <li>
+                    <p>PHP is a loosely typed language, and we do not require to declare the data types of variables, rather PHP assumes it automatically by analyzing the values. The same happens while conversion. No variables are declared before they are used. It automatically converts types from one type to another whenever required.</p>
+                </li>
+                <li>
+                    <p>PHP variables are case-sensitive, i.e., $sum and $SUM are treated differently.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Data_types">
+            <header>Data types</header>
+
+            <p>Data Types define the type of data a variable can store. PHP allows eight different types of data types. All of them are discussed below. There are pre-defined, user-defined, and special data types.</p>
+
+            <p>The predefined data types are:</p>
+
+            <ul>
+                <li>
+                    <p>Boolean</p>
+                </li>
+                <li>
+                    <p>Integer</p>
+                </li>
+                <li>
+                    <p>Double</p>
+                </li>
+                <li>
+                    <p>String</p>
+                </li>
+            </ul>
+
+            <p>The user-defined (compound) data types are:</p>
+
+            <ul>
+                <li>
+                    <p>Array</p>
+                </li>
+                <li>
+                    <p>Objects</p>
+                </li>
+            </ul>
+
+            <p>The special data types are:</p>
+
+            <ul>
+                <li>
+                    <p>NULL</p>
+                </li>
+                <li>
+                    <p>resource</p>
+                </li>
+            </ul>
+
+            <p>The first five are called simple data types and the last three are compound data types:</p>
+
+            <ol>
+                <li>
+                    <p>Integer : Integers hold only whole numbers including positive and negative numbers, i.e., numbers without fractional part or decimal point. They can be decimal (base 10), octal (base 8), or hexadecimal (base 16). The default base is decimal (base 10). The octal integers can be declared with leading 0 and the hexadecimal can be declared with leading 0x. The range of integers must lie between -2^31 to 2^31.</p>
+
+                    <code
+                    >&lt;?php
+                        // decimal base integers
+                        $decimal = 50; 
+                        
+                        // octal base integers
+                        $octal = 07; 
+                        
+                        // hexadecimal base integers
+                        $hexadecimal = 0x45;
+                    ?&gt;</code>
+                </li>
+                <li>
+                    <p>Double: Can hold numbers containing fractional or decimal parts including positive and negative numbers or a number in exponential form. By default, the variables add a minimum number of decimal places. The Double data type is the same as a float as floating-point numbers or real numbers.</p>
+
+                    <code
+                    >&lt;?php
+                        $val1 = 50.85; 
+                        $val2 = 654.26;
+                    ?&gt;</code>
+                </li>
+                <li>
+                    <p>String: Hold letters or any alphabets, even numbers are included. These are written within double quotes during declaration. The strings can also be written within single quotes, but they will be treated differently while printing variables. To clarify this look at the example below.</p>
+
+                    <code
+                    >&lt;?php
+                        $name = "Aydin";
+                    ?&gt;</code>
+                </li>
+                <li>
+                    <p>NULL: These are special types of variables that can hold only one value i.e., NULL. We follow the convention of writing it in capital form, but it’s case-sensitive. If a variable is created without a value or no value, it is automatically assigned a value of NULL. It is written in capital letters.</p>
+
+                    <code
+                    >&lt;?php
+                        $nm = NULL;
+                        echo $nm;    // This will give no output
+                    ?&gt;</code>
+                </li>
+                <li>
+                    <p>Boolean: Boolean data types are used in conditional testing. Hold only two values, either TRUE(1) or FALSE(0). Successful events will return true and unsuccessful events return false. NULL type values are also treated as false in Boolean. Apart from NULL, 0 is also considered false in boolean. If a string is empty then it is also considered false in boolean data type.</p>
+                </li>
+                <li>
+                    <p>Arrays: Array is a compound data-type that can store multiple values of the same data type. Below is an example of an array of integers. It combines series of data that are related together.</p>
+
+                    <code
+                    >&lt;?php
+                        $intArray = array( 10, 20 , 30);
+    
+                        echo "First Element: $intArray[0]\n";
+                        echo "Second Element: $intArray[1]\n";
+                        echo "Third Element: $intArray[2]\n";
+                    ?&gt;</code>
+                </li>
+                <li>
+                    <p>Objects: Objects are defined as instances of user-defined classes that can hold both values and functions and information for data processing specific to the class. This is an advanced topic and will be discussed in detail in further articles. When the objects are created, they inherit all the properties and behaviors from the class, having different values for all the properties. Objects are explicitly declared and created from the new keyword.</p>
+                </li>
+                <li>
+                    <p>Resources: Resources in PHP are not an exact data type. These are basically used to store references to some function call or to external PHP resources. For example, consider a database call. This is an external resource. Resource variables hold special handles to files and database connections. We will discuss resources in detail in further articles.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="main-section" id="if_statement">
+            <header>if statement</header>
+
+            <p>This statement allows us to set a condition. On being TRUE, the following block of code enclosed within the if clause will be executed.</p>
+
+            <code
+            >&lt;?php
+                $x = 12;
+        
+                if ($x > 0) {
+                    echo "The number is positive";
+                }
+            ?&gt;</code>
+        </section>
+
+        <section class="main-section" id="if_else_statement">
+            <header>if else statement</header>
+
+            <p>We understood that if a condition will hold i.e., TRUE, then the block of code within if will be executed. But what if the condition is not TRUE and we want to perform an action? This is where else comes into play. If a condition is TRUE then if block gets executed, otherwise else block gets executed.</p>
+
+            <code
+            >&lt;?php
+                $x = -12;
+    
+                if ($x > 0) {
+                    echo "The number is positive";
+                } else {
+                    echo "The number is negative";
+                }
+            ?&gt;</code>
+
+            <p>The output will be "The number is negative".</p>
+        </section>
+
+        <section class="main-section" id="if_elseif_else_statement">
+            <header>if elseif else statement</header>
+
+            <p>We understood that if a condition will hold i.e., TRUE, then the block of code within if will be executed. But what if the condition is not TRUE and we want to perform an action? This is where else comes into play. If a condition is TRUE then if block gets executed, otherwise else block gets executed.</p>
+
+            <code
+            >&lt;?php
+                $x = "August";
+    
+                if ($x == "January") {
+                    echo "Happy Republic Day";
+                } elseif ($x == "August") {
+                    echo "Happy Independence Day!!!";
+                } else {
+                    echo "Nothing to show";
+                }
+            ?&gt;</code>
+
+            <p>The output will be "Happy Independence Day!!!".</p>
+        </section>
+
+        <section class="main-section" id="switch_statement">
+            <header>switch statement</header>
+
+            <p>The "switch" performs in various cases i.e., it has various cases to which it matches the condition and appropriately executes a particular case block. It first evaluates an expression and then compares with the values of each case. If a case matches then the same case is executed. To use switch, we need to get familiar with two different keywords namely, break and default.</p>
+
+            <ol>
+                <li>
+                    <p>The break statement is used to stop the automatic control flow into the next cases and exit from the switch case.</p>
+                </li>
+                <li>
+                    <p>The default statement contains the code that would execute if none of the cases match.</p>
+                </li>
+            </ol>
+
+            <code
+            >&lt;?php
+                $n = "February";
+    
+                switch($n) {
+                    case "January":
+                        echo "Its January";
+                        break;
+                    case "February":
+                        echo "Its February";
+                        break;
+                    case "March":
+                        echo "Its March";
+                        break;
+                    default:
+                        echo "Doesn't exist";
+                }
+            ?&gt;</code>
+
+            <p>The output will be "Its February".</p>
+        </section>
+
+        <section class="main-section" id="for_loop">
+            <header>for loop</header>
+
+            <p>This type of loops is used when the user knows in advance, how many times the block needs to execute. That is, the number of iterations is known beforehand. These type of loops are also known as entry-controlled loops. There are three main parameters to the code, namely the initialization, the test condition and the counter.</p>
+
+            <ol>
+                <li>
+                    <p>Initialization Expression: In this expression we have to initialize the loop counter to some value. for example: $num = 1;</p>
+                </li>
+                <li>
+                    <p>Test Expression: In this expression we have to test the condition. If the condition evaluates to true then we will execute the body of loop and go to update expression otherwise we will exit from the for loop. For example: $num &lt;= 10;</p>
+                </li>
+                <li>
+                    <p>Update Expression: After executing loop body this expression increments/decrements the loop variable by some value. for example: $num += 2;</p>
+                </li>
+            </ol>
+
+            <code
+            >&lt;?php
+                for ($num = 1; $num &lt;= 10; $num += 2) {
+                    echo "$num \n";
+                }
+            ?&gt;</code>
+
+            <p>The output will be:</p>
+
+            <pre>
+                1
+                3
+                5
+                7
+                9
+            </pre>
+        </section>
+
+        <section class="main-section" id="while_loop">
+            <header>while loop</header>
+
+            <p>The while loop is also an entry control loop like for loops i.e., it first checks the condition at the start of the loop and if its true then it enters the loop and executes the block of statements, and goes on executing it as long as the condition holds true.</p>
+
+            <code
+            >&lt;?php
+                $num = 2;
+    
+                while ($num &lt; 12) {
+                    $num += 2;
+                    echo $num, "\n";
+                }
+            ?&gt;</code>
+
+            <p>The output will be:</p>
+
+            <pre>
+                4
+                6
+                8
+                10
+                12
+            </pre>
+        </section>
+
+        <section class="main-section" id="do_while_loop">
+            <header>do while loop</header>
+
+            <p>This is an exit control loop which means that it first enters the loop, executes the statements, and then checks the condition. Therefore, a statement is executed at least once on using the do…while loop. After executing once, the program is executed as long as the condition holds true.</p>
+
+            <code
+            >&lt;?php
+                $num = 2;
+                do {
+                    $num += 2;
+                    echo $num, "\n";
+                } while ($num &lt; 12);
+            ?&gt;</code>
+
+            <p>The output will be:</p>
+
+            <pre>
+                4
+                6
+                8
+                10
+                12
+            </pre>
+        </section>
+
+        <section class="main-section" id="foreach_loop">
+            <header>foreach loop</header>
+
+            <p>This loop is used to iterate over arrays. For every counter of loop, an array element is assigned and the next counter is shifted to the next element.</p>
+
+            <code
+            >&lt;?php
+                $arr = array (10, 20, 30, 40, 50, 60);
+                foreach ($arr as $val) { 
+                    echo "$val \n";
+                }
+                
+                $arr = array ("Ram", "Laxman", "Sita");
+                foreach ($arr as $key => $val) { 
+                    echo "$key: $val \n";
+                }
+            ?&gt;</code>
+
+            <p>The output will be:</p>
+
+            <pre>
+                10 
+                20 
+                30 
+                40 
+                50 
+                60 
+                0: Ram 
+                1: Laxman 
+                2: Sita 
+            </pre>
         </section>
     </main>
 
