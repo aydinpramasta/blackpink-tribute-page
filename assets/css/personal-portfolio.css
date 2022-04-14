@@ -1,0 +1,44 @@
+:root {
+    --fs-400: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#button-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: black;
+    background-color: white;
+    width: 12px;
+    height: 16px;
+    padding: 9px 12px;
+    margin: 2rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: color 200ms ease,
+    background-color 200ms ease;
+}
+
+#button-to-top:hover {
+    color: white;
+    background-color: black;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+}
+
+#welcome-section {
+    height: 100vh;
+}
