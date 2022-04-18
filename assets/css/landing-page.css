@@ -19,6 +19,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 #header {
@@ -64,14 +65,14 @@ body {
 
 #intro {
     min-height: 100vh;
-    padding-inline: 2rem;
+    margin: 0 10vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #intro > * {
-    margin-inline: 1rem;
+    margin-inline: 2rem;
 }
 
 #intro .intro-desc {
@@ -137,6 +138,7 @@ button:hover {
 #plans .card:hover {
     transform: scale(1.015);
     box-shadow: 0 8px 5px 5px rgba(0,0,0,0.3);
+    z-index: 1;
 }
 
 #plans .card h3 {
