@@ -1,0 +1,44 @@
+:root {
+    --fs-400: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 5vw;
+}
+
+.card {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    margin: 12px;
+    font-weight: 500;
+    transition: transform 200ms ease, 
+                box-shadow 200ms ease;
+}
+
+.card:hover {
+    text-decoration: underline;
+    transform: scale(1.015);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
